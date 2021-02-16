@@ -1,4 +1,4 @@
-DIRECTORY:
+## Directory
 I have already segregated all the images based on their dance form as per the train.csv file in different folders.So, it will be easy to classify them.
 Also created a new folder 'valid' to validate the model,just used around 15 images from each dance form .
 
@@ -31,7 +31,7 @@ Approach:
 1: Used the ImageDataGenerator function to create new augmentated images.and then applied that function to all the images present in train and valid folder
 
 2: Created a Sequential model with different layers and summary of the model is below:
-
+````
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -78,7 +78,7 @@ activation_4 (Activation)    (None, 8)                 0
 Total params: 1,711,944
 Trainable params: 1,711,944
 Non-trainable params: 0
-
+````
 Although, didnt know much about how to boost the performace with different paramaters, so used the same model created in my OpenCV python course.
 
 3: Then fit the model with around 150 epochs, and other different parameter and validate the model.
