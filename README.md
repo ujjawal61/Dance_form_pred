@@ -1,8 +1,8 @@
 ## Directory
 I have already segregated all the images based on their dance form as per the train.csv file in different folders.So, it will be easy to classify them.
 Also created a new folder 'valid' to validate the model,just used around 15 images from each dance form .
-
-dance_pred:/train:
+`````
+dance_pred: /train:
 		  /bharatanatyam
     		  /kathak
    		  /kathakali
@@ -11,7 +11,7 @@ dance_pred:/train:
   		  /mohiniyattam
    		  /odissi
     		  /sattriya
-	/valid:
+       /valid:
 		  /bharatanatyam
     		  /kathak
    		  /kathakali
@@ -26,8 +26,8 @@ dance_pred:/train:
 	/submission.csv
 	/training.ipynb
 	/predictions.ipynb
-
-Approach:
+`````
+## Approach:
 1: Used the ImageDataGenerator function to create new augmentated images.and then applied that function to all the images present in train and valid folder
 
 2: Created a Sequential model with different layers and summary of the model is below:
